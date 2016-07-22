@@ -1,0 +1,223 @@
+/*
+Theme Name: Adult Video 01 Green
+Author: Adult Site Skins
+Author URI: http://www.adultsiteskins.com/
+Description: Wordpress theme for adult video blogs. 
+Version: 1.0
+*/
+
+body { margin: 0; font: 12px Tahoma, Geneva, sans-serif; text-align: center; color: #cdcdcd; background-color: #181818; text-shadow: 1px 1px #000000; }
+
+h1, h2, h3, ul, ul li { margin: 0; padding: 0; }
+
+ul li { list-style: none; }
+
+a { color: #cdcdcd; text-decoration: underline; }
+a:hover { color: #ffffff; text-decoration: none; }
+a img { border: 0; }
+
+:focus { outline: 0; }
+
+.clear { clear: both; }
+
+.header { width: 1254px; height: 92px; margin: auto; text-align: left; background: url(../images/header-bg.png) repeat-x left top; }
+.header .logo { margin: 21px 0 0 7px; float: left; }
+.header .info { height: 43px; float: left; margin: 20px 0 0 21px; text-align: left; }
+.header .info h1 { font-size: 20px; font-weight: normal; color: #ffffff; }
+.header .info p { margin: 6px 0; }
+.header .user-bar { width: 339px; margin: 23px 21px 0 0; float: right; }
+.header .user-bar form { width: 336px; height: 29px; margin: 0 0 6px 0; }
+.header .user-bar form .search-form { width: 300px; height: 29px; float: left; border: 0; background: url(../images/search-form.png) no-repeat left top; padding: 0 0 0 4px; color: #cdcdcd; text-shadow: 1px 1px #000000; line-height: 29px; }
+.header .user-bar form .search-button { width: 32px; height: 29px; float: left; border: 0; background: url(../images/search-button.png) no-repeat left top; cursor: pointer; }
+.header .user-bar .user-login { width: 50%; *width: 49%; float: left; font-size: 9px; }
+.header .user-bar .rss-feed { width: 50%; *width: 49%; float: left; font-size: 9px; text-align: right; }
+
+.navigation { width: 1254px; height: 38px; margin: 14px auto 0 auto; background: url(../images/menu-bg.png) no-repeat left top; }
+.navigation ul li { height: 37px; margin: 1px 0 0 0; padding: 0 21px 0 20px; line-height: 37px; font-weight: bold; font-size: 14px; float: left; background: url(../images/menu-delimiter.png) no-repeat right top; }
+.navigation ul li a { text-decoration: none; }
+.navigation ul li a:hover { color: #a8e31c; }
+
+/* Some code from this tutorial http://www.noupe.com/tutorial/drop-down-menu-jquery-css.html */
+
+.navigation ul.menu li { position: relative; }
+.navigation ul.menu li span { color: #a8e31c; }
+.navigation ul.menu li span.subhover { cursor: pointer; }
+.navigation ul.menu li ul.sub-menu { position: absolute; left: -1px; top: 37px; display: none; padding: 0; margin: 0; }
+.navigation ul.menu li ul.sub-menu li { width: 184px; height: 27px; line-height: 27px; text-indent: 14px; font-size: 12px; font-weight: normal; background: url(../images/left-menu-bg.png) no-repeat left top; text-align: left; padding: 0; margin: 0; }
+
+/* End of code from tutorial */
+
+.main { width: 1254px; margin: auto; text-align: left; }
+
+.content { width: 950px; float: left; }
+
+.posts { width: 750px; margin: 14px 8px; float: right; }
+.posts .page-title { margin: 1px 0 14px 2px; font-size: 16px; color: #ffffff; font-weight: bold; }
+.posts .post-title { margin: 1px 0 4px 2px; font-size: 16px; color: #ffffff; font-weight: bold; }
+.posts .post-date { margin: 0 0 14px 2px; font-size: 11px; font-style: italic; }
+.posts a { color: #a8e31c; }
+.posts .post { width: 244px; height: 226px; float: left; margin: 0 3px 6px 3px; }
+.posts .post a { color: #a8e31c; float: left; }
+.posts .post a img { width: 240px; height: 180px; display: block; background-color: #2a2a2a; border: 2px solid #cdcdcd; }
+.posts .post a:hover img { border: 2px solid #a8e31c; }
+.posts .post .duration { color: #cdcdcd; position: absolute; width: 44px; height: 20px; margin: 157px 0 0 193px; display: block; line-height: 20px; text-align: center; background: #000000; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; z-index: 1; opacity: 0.7; filter: alpha(opacity=70); }
+.posts .post .link { width: 244px; height: 15px; display: block; overflow: hidden; }
+.posts .post span { font-size: 11px; width: 244px; height: 14px; display: block; overflow: hidden; }
+.posts .post span a { color: #cdcdcd; float: none; } 
+
+.sidebar { width: 184px; float: left; }
+.sidebar h3 { width: 184px; height: 31px; margin: 14px 0 3px 0; font-size: 16px; text-transform: uppercase; text-indent: 10px; line-height: 29px; color: #ffffff; background: url(../images/title-bg-left.png) no-repeat left top; }
+.sidebar h3 .rsswidget { color: #ffffff; text-decoration: none; }
+.sidebar ul li .rsswidget { width: 184px; height: 27px; line-height: 24px; display: block; overflow: hidden; }
+.sidebar ul li .rss-date { width: 184px; line-height: 16px; display: block; background-color: #201f20; text-indent: 14px; font-size: 11px; font-style: italic; }
+.sidebar ul li .rssSummary { width: 164px; padding: 0 10px 10px 10px; text-indent: 0; line-height: 16px; }
+.sidebar ul li { width: 184px; color: #ffffff; line-height: 27px; text-indent: 14px; background: url(../images/left-menu-bg.png) repeat-y left top; }
+.sidebar ul li a { font-size: 12px; font-weight: normal; }
+.sidebar ul li.cat-item a { font-size: 14px; font-weight: bold; }
+.sidebar ul li.cat-item a:hover { color: #ffffff; }
+.sidebar ul li.cat-item ul li { width: 184px; height: 27px; color: #ffffff; line-height: 27px; text-indent: 24px; background: url(../images/left-menu-bg-2.png) repeat-y left top; }
+.sidebar ul li.cat-item ul li a { font-size: 12px; font-weight: normal; }
+.sidebar div { width: 184px; background-color: #201f20; }
+.sidebar div p { padding: 10px; margin: 0; }
+.sidebar div p a { color: #a8e31c; }
+.sidebar select { width: 156px; }
+.sidebar .tagcloud { width: 164px; padding: 10px; } 
+.sidebar #wp-calendar { width: 164px; text-align: center; }
+.sidebar #wp-calendar a { color: #a8e31c; }
+.sidebar .searchform div { width: 164px; }
+.sidebar .searchform #s { width: 128px; text-shadow: 1px 1px #000000; line-height: 29px; }
+.sidebar #recentcomments ul li { font-size: 12px; font-weight: normal; }
+
+#wp-calendar { margin: 10px; }
+
+.searchform div { padding: 10px; }
+.searchform div #s { height: 29px; float: left; border: 0; background: url(../images/search-form.png) no-repeat left top; padding: 0 0 0 4px; color: #cdcdcd; text-shadow: 1px 1px #000000; }
+.searchform div #searchsubmit { width: 32px; height: 29px; float: left; border: 0; background: url(../images/search-button.png) no-repeat left top; cursor: pointer; }
+
+.adsbar { width: 304px; float: left; }
+.adsbar h3 { width: 304px; height: 31px; margin: 14px 0 3px 0; font-size: 16px; text-transform: uppercase; text-indent: 10px; line-height: 29px; color: #ffffff; background: url(../images/title-bg-right.png) no-repeat left top; }
+.adsbar h3 .rsswidget { color: #ffffff; text-decoration: none; }
+.adsbar ul li .rsswidget { width: 304px; height: 27px; display: block; overflow: hidden; }
+.adsbar ul li .rss-date { width: 304px; line-height: 16px; display: block; background-color: #201f20; text-indent: 14px; font-size: 11px; font-style: italic; }
+.adsbar ul li .rssSummary { width: 284px; padding: 0 10px 10px 10px; text-indent: 0; line-height: 16px; }
+.adsbar ul li { width: 304px; color: #ffffff; line-height: 27px; text-indent: 14px; background: url(../images/right-menu-bg.png) repeat-y left top; }
+.adsbar ul li a { font-size: 12px; font-weight: normal; }
+.adsbar ul li.cat-item a { font-size: 14px; font-weight: bold; }
+.adsbar ul li.cat-item ul li { width: 304px; height: 27px; color: #ffffff; line-height: 27px; text-indent: 24px; background: url(../images/right-menu-bg-2.png) repeat-y left top; }
+.adsbar ul li.cat-item ul li a { font-size: 12px; font-weight: normal; }
+.adsbar ul li a:hover { color: #ffffff; }
+.adsbar .ad300x250 { width: 300px; height: 250px; background-color: #000000; border: 2px solid #201f20; border-top: 0; }
+.adsbar .adfirst { border-top: 2px solid #201f20; }
+.adsbar div { width: 304px; background-color: #201f20; }
+.adsbar div p { padding: 10px; margin: 0; }
+.adsbar div p a { color: #a8e31c; }
+.adsbar div .block-inner { width: 284px; margin: 0 10px; }
+.adsbar .tagcloud { width: 284px; padding: 10px; } 
+.adsbar .tagcloud a { font-weight: bold; }
+.adsbar #wp-calendar { width: 284px; text-align: center; }
+.adsbar #wp-calendar a { color: #a8e31c; }
+.adsbar .searchform div { width: 284px; }
+.adsbar .searchform #s { width: 248px; text-shadow: 1px 1px #000000; line-height: 29px; }
+.adsbar #recentcomments ul li { font-size: 12px; font-weight: normal; }
+
+.footer { width: 1254px; height: 92px; margin: 20px auto 0 auto; background-color: #201f20; }
+.footer .footer-links { margin: 18px 20px 0 10px; float: left; width: 1224px; text-align: right; }
+.footer .footer-links ul { float: left; }
+.footer .footer-links ul li { margin: 0 10px; float: left; }
+.footer p { text-align: center; }
+.footer a { text-decoration: none; }
+
+.single-post embed, .single-post object { background-color: #000000; }
+.single-post p { width: 750px; text-align: left; }
+.single-post .video-category { width: 300px; float: left; margin: 0 0 10px 0; text-align: left; }
+.single-post .video-tags { width: 450px; float: left; margin: 0 0 10px 0; text-align: right; }
+.single-post img { border: 2px solid #cdcdcd; }
+.single-post a:hover img { border: 2px solid #a8e31c; } 
+.single-post h1, .single-post h2, .single-post h3, .single-post h4, .single-post h5, .single-post h6 { margin: 10px 0; }
+.single-post ul, .single-post ol { margin: 20px; padding: 0; }
+.single-post ul li, .single-post ol li { margin: 0 20px; padding: 0; }
+.single-post ul li { list-style: disc; }
+.single-post blockquote { width: 730px; padding: 10px; margin: 0; background-color: #201f20; font-style: italic; }
+.single-post blockquote p { margin: 0; }
+.single-post .attachment-image { width: 730px; padding: 10px; background-color: #201f20; text-align: center; margin: 10px 0; }
+.single-post .attachment-image img { max-width: 726px; }
+.single-post .previous-link { width: 250px; float: left; text-align: left; font-size: 14px; font-weight: bold; }
+.single-post .next-link { width: 250px; float: left; text-align: right; font-size: 14px; font-weight: bold; }
+.single-post .back-to-gallery { width: 250px; float: left; text-align: center; font-size: 14px; font-weight: bold; }
+
+.post-comments { width: 750px; margin: 10px 0; }
+.post-comments .total-comments { float: left; font-size: 14px; color: #ffffff; line-height: 20px; }
+.post-comments .comment-link { float: right; display: block; cursor: pointer; font-size: 16px; font-weight: bold; text-transform: uppercase; color: #a8e31c; text-decoration: underline; line-height: 18px; }
+.post-comments .comment-link img { border: 0 !important; }
+
+.add-comment { width: 336px; padding: 20px; background-color: #121212; text-align: left; display: none; z-index: 10000; -moz-box-shadow: 0 0 10px 5px #a8e31c; -webkit-box-shadow: 0 0 10px #a8e31c; border: 1px solid #000000; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.add-comment p { width: 336px !important; margin: 0 0 10px 0; font-size: 11px; }
+.add-comment .input-text { width: 332px; height: 29px; margin: 0 0 20px 0; padding: 0 0 0 4px; border: 0; background: url(../images/input-text.png) no-repeat left top; color: #cdcdcd; font: 12px Tahoma, Geneva, sans-serif; line-height: 29px; }
+.add-comment .input-textarea { width: 332px; height: 196px; margin: 0 0 20px 0; padding: 4px 0 0 4px; border: 0; background: url(../images/input-textarea.png) no-repeat left top; color: #cdcdcd; font: 12px Tahoma, Geneva, sans-serif; }
+.add-comment .input-submit { width: 167px; height: 33px; border: 0; background: url(../images/add-comment.png) no-repeat left top; cursor: pointer; margin: auto; }
+.add-comment .close { background-image:url(../images/close.png); position: absolute; right: -15px; top: -15px; cursor: pointer; height: 28px; width: 28px; }
+
+.comment-list { width: 750px; margin: 0 !important; padding: 0 !important; list-style: none !important; }
+.comment-list li { width: 730px; padding: 10px !important; margin: 0 0 8px 0 !important; background-color: #201f20; }
+.comment-list li.alt { background-color: #2c2b2c; }
+.comment-list .avatar { float: left; margin: 0 10px 0 0; border: 2px solid #cdcdcd; }
+.comment-list .comment-author { color: #cdcdcd; float: left; }
+.comment-list .comment-author em { font-size: 10px; text-transform: lowercase; font-weight: normal; font-style: italic; color: #cdcdcd; }
+.comment-list .comment-data { float: right; text-align: right; font-size: 10px; font-weight: normal; font-style: italic; }
+.comment-list .comment-data a { color: #cdcdcd !important; }
+.comment-list p { float: left; width: 652px; color: #ffffff; }
+
+.comments-paginator { text-align: center; font-size: 14px; }
+.comments-paginator a { margin: 0 4px; }
+
+.paginator { width: 700px; margin: 20px 25px; }
+.paginator span, .paginator a { display: block; float: left; margin: 2px 2px 2px 0; padding: 6px 10px 5px 10px; text-decoration: none; width: auto; color: #ffffff; background: #201f20; }
+.paginator a:hover { color: #ffffff; background: #a8e31c; }
+.paginator .current { padding: 6px 10px 5px 10px; background: #a8e31c; color:#ffffff; }
+
+/* WordPress core */
+
+.alignnone { margin: 0 3px 3px 0; }
+.aligncenter, div.aligncenter { display:block; margin: 3px auto 3px auto; }
+.alignright { float:right; margin: 0 0 3px 3px; }
+.alignleft { float:left; margin: 0 3px 3px 0; }
+.aligncenter { display: block; margin: 3px auto 3px auto; }
+a img.alignright { float:right; margin: 0 0 3px 3px; }
+a img.alignnone { margin: 0 3px 3px 0; }
+a img.alignleft { float:left; margin: 0 3px 3px 0; }
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.wp-caption { background: #fff; border: 1px solid #f0f0f0; max-width: 96%; padding: 5px 3px 10px; text-align: center; }
+.wp-caption.alignnone { margin: 0 3px 3px 0; }
+.wp-caption.alignleft { margin: 0 3px 3px 0; }
+.wp-caption.alignright { margin: 0 0 3px 3px; }
+.wp-caption img { border: 0 none; height: auto; margin:0; max-width: 98.5%; padding:0; width: auto; }
+.wp-caption p.wp-caption-text { font-size:11px; line-height:17px; margin:0; padding:0 4px 5px; }
+
+.gallery { margin: auto; }
+.gallery .gallery-item { float: left; margin: 2px; text-align: center; width: 244px; height: 184px; }
+.gallery .gallery-item img { width: 240px; height: 180px; }
+.gallery .gallery-item .gallery-icon { margin: 0; padding: 0; }
+.gallery .gallery-caption { margin-left: 0; }
+.gallery br { font-size: 1px; }
+
+/* End of Wordpress core */
+
+/* Some fixes for ie6 */
+
+.content, .sidebar, .adsbar, .comment-list, .comment-list li { *margin: 0 !important; *padding: 0 !important; }
+
+.posts { *margin: 14px 0px; }
+
+.posts .post { *margin: 0 2px 6px 0; }
+
+.single-post .video-category { *width: 300px; }
+
+.single-post .video-tags { *width: 430px; }
+
+.comment-list, .single-post embed, .single-post object, .single-post p, .post-comments { *width: 730px !important; }
+
+.comment-list li { *width: 710px !important; *margin: 0 0 10px 0 !important; *padding: 10px 0 10px 10px !important; }
+
+.gallery .gallery-item { *margin: 1px; }
+
+/* End of ie6 fixes */
