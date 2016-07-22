@@ -10,9 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Category;
+use App\Video;
 
 Route::get('/', function () {
-    return view('index');
+	$categories = Category::all();
+    return view('index', ['categories' => $categories]);
 });
 
 

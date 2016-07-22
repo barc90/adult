@@ -92,13 +92,14 @@ img.emoji {
                         
             </div>
             
-                            <div class="sidebar">
+                 <div class="sidebar">
                     
        
-		<h3>Categories</h3>		<ul>
-	<li class="cat-item cat-item-1"><a href="big-tits/" >Big Titls</a>
-</li>
-		</ul>
+		<h3>Categories</h3>
+			@yield('categories')
+
+			
+				
                     
                     <div class="clear"></div>
             
