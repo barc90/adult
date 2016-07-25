@@ -22,9 +22,9 @@
             <div class="link"><a href="#">{{$video->title}}</a></div>
                         
             <span>
-				Download: <a download href="/upload_videos/mp4/{{$video->video_file}}">MP4</a>&nbsp&nbsp&nbsp&nbsp
+				Download: <a download href="/upload_videos/mp4/{{$video->video_file}}">MP4</a>&nbsp&nbsp&nbsp
 				@if ($video->converted)
-					<a download href="/upload_videos/flv/{{!! substr($video->video_file, 0, -4) !!}}.flv">FLV</a>
+					<a download href="/upload_videos/flv/{!! substr($video->video_file, 0, -4) !!}.flv">FLV</a>
 				@endif
 			</span>
                         
