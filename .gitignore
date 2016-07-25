@@ -1,8 +1,6 @@
 /vendor
 /node_modules
 /public/storage
-!/public/upload_videos/mp4/*
-!/public/upload_videos/flv/*
 /public/images/upload_thumbs/*
 Homestead.yaml
 Homestead.json
