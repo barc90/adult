@@ -44,7 +44,7 @@ class Encode extends Command
 
 			$current_file_name = public_path() . '/upload_videos/mp4/' . $video->video_file;
 			$new_file_name     = public_path() . '/upload_videos/flv/' . substr($video->video_file, 0, -4) . '.flv';
-			$out .= shell_exec("ffmpeg -y -i $current_file_name -c:v libx264 -crf 19 -strict experimental $new_file_name");
+			shell_exec("ffmpeg -y -i $current_file_name -c:v libx264 -crf 19 -strict experimental $new_file_name");
 		
 			$video->converted = 1;
 			$video->save();			
