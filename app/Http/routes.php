@@ -14,11 +14,20 @@ use App\Category;
 use App\Video;
 
 Route::get('/', function () {
+
 	$categories = Category::all();
-    return view('index', ['categories' => $categories]);
+	$videos = Video::orderBy('id', 'desc')->get();
+
+    return view('index', ['categories' => $categories, 'videos' => $videos]);
 });
 
 
 Route::get('/category/{slug}', function ($slug) {
-    return "TEST - $slug";
+
+	$categories = Category::all();
+	$category = Category::where('slug', $slug)->first();	
+
+	$videos = Video::where('category_id', $category->id)->orderBy('id', 'desc')->get();	
+
+    return view('category', ['categories' => $categories, 'videos' => $videos]);
 });

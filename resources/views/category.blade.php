@@ -7,6 +7,8 @@
 	@endforeach
 				
 
+	
+
 </ul>
 @endsection
 
@@ -18,7 +20,7 @@
                     
         	<a href="#" title="{{$video->title}}"><img width="1" height="1" src="/images/upload_thumbs/{{$video->thumb}}" class="attachment-240x180 wp-post-image" alt="{{$video->title}}" title="" /></a>
                         
-                                    
+                                  
             <div class="link"><a href="#">{{$video->title}}</a></div>
                         
             <span>
@@ -27,7 +29,8 @@
 					<a download href="/upload_videos/flv/{{!! substr($video->video_file, 0, -4) !!}}.flv">FLV</a>
 				@endif
 			</span>
-                        
+            
+            
             <span></span>
                     
         </div>

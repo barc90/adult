@@ -67,7 +67,12 @@ img.emoji {
     
         <div class="navigation">
             
-            <div class="menu"><ul><li class="page_item page-item-2"><a href="#">Contact</a></li></ul></div>
+            <div class="menu">
+				<ul>
+					<li class="page_item page-item-2"><a href="{{asset('/')}}">Home</a></li>
+					<li class="page_item page-item-2"><a href="#">Contact</a></li>
+				</ul>
+			</div>
             
         </div>
     
@@ -77,22 +82,24 @@ img.emoji {
         
             <div class="posts">
     			@yield('content')
-                                     
-                    </div>
-                                                        
-                    <div class="clear"></div>
+                   
+				<div class="clear"></div>
 
-                    <div class="paginator">
+                <div class="paginator">
                     
                         
-                    </div>
+                </div>
                     
-                    <div class="clear"></div>
-                    
-                        
+                <div class="clear"></div>
+                  
             </div>
-            
-                 <div class="sidebar">
+                                                        
+                    
+                    
+                  
+
+
+  <div class="sidebar">
                     
        
 		<h3>Categories</h3>
@@ -104,6 +111,12 @@ img.emoji {
                     <div class="clear"></div>
             
                 </div>
+
+
+      
+            </div>
+            
+               
         
         </div>
         
